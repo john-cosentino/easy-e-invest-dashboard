@@ -2,194 +2,123 @@
 
 ## Purpose
 
-Easy E Invest is a repeatable investment research and paper-testing process. It is designed to detect potentially important developments early, predict the underlying economic variable before selecting an investment, test the prediction against independent evidence and market behavior, and record the result so the method can improve over time.
+Easy E Invest is a repeatable, independent discovery and paper-testing process. Its job is to find investable opportunities across markets, predict the underlying economic variable before choosing an instrument, make testable paper decisions, and preserve the evidence and outcomes needed to improve the process. User-supplied scenarios and existing watchlist names are competitors for research attention, not mandatory conclusions or permanent priority topics.
 
-An interesting event is not a trade. An actionable thesis means the evidence is strong enough to begin entry analysis. Capital should not be committed solely because a headline, expert, contract award, or price move looks persuasive.
+An interesting event is not automatically a trade. The process may make a small exploratory paper decision when a thesis is incomplete but materially supported; it must not require near certainty, force activity, or turn missing operational data into an investment judgment. All entries, orders, positions, gains and losses are simulated only.
 
 ## Governing Principles
 
-1. Predict the underlying economic variable first. Select commodities, funds, or companies only after defining what is expected to change and why.
-2. Separate observed facts from forecasts and opinions.
-3. Require multiple independent elements to converge before advancing a thesis.
-4. Treat experts as enhancers, not originating proof.
-5. Search actively for contradictory evidence and record it beside supporting evidence.
-6. Separate thesis confidence from trading edge. A correct thesis can still be a poor trade if the market has already repriced it.
-7. An actionable thesis does not automatically mean buy now. It enters the Entry Window stage.
-8. Define invalidation before evaluating an entry.
-9. Test the process with paper positions before considering automated or real-money execution.
-10. Preserve source links, timestamps, and prediction history. Never rewrite an earlier prediction after the outcome is known.
+1. Predict the economic variable, direction, mechanism and horizon before selecting an instrument.
+2. Separate observed facts from forecasts, source opinion and promotional language.
+3. Prefer primary records for material facts and use independent reporting for context or confirmation.
+4. Search actively for the strongest contradiction, implementation risk and already-priced risk.
+5. Separate thesis confidence from trading edge and entry quality.
+6. Preserve stable thesis IDs, frozen initial predictions, paper-trade history and source links. Never rewrite history after the outcome is known.
+7. Make an explicit paper decision: paper entry, expiring pending paper order, or rejection. Do not use WAIT as an indefinite holding bucket.
+8. Require contemporaneous prices, liquidity and applicable costs for simulated fills. No hindsight fills.
+9. Compare accepted and rejected ideas with relevant benchmarks so both bad entries and excessive caution remain measurable.
+10. Do not imply exhaustive coverage, proprietary feeds or reliable institutional-flow data when those are unavailable.
 
-## Research Pipeline
+## Discovery Allocation and Coverage
 
-### Stage 1 Trigger
+At least two thirds of each run's research effort must seek candidates outside the existing watchlist. The practical universe includes major equity sectors, broad and sector ETFs, commodities, and rates or credit instruments for which reliable public data are accessible. Actual coverage and material data gaps must be recorded in the Scan Runs log.
 
-A trigger directs further investigation. It does not establish a thesis by itself.
+Use several independent discovery channels rather than a single news list:
 
-Trigger classes include:
+- Earnings and guidance surprises, estimate revisions and margin changes
+- Price, volume, market breadth and relative-strength changes
+- Valuation dislocations with an identifiable catalyst
+- Corporate actions, financing, restructuring and insider filings
+- Regulatory decisions, legislation, policy and government awards
+- Supply, demand, inventory, transport and capacity changes
 
-- Government spending and unusual contract awards, including USAspending.gov
-- Congressional legislation, hearings, appropriations, or committee action
-- Federal regulatory, sanctions, trade, defense, energy, and industrial-policy decisions
-- Geopolitical events and military escalation or de-escalation
-- Supply-chain disruptions, shortages, transport constraints, or capacity changes
-- Major corporate or industry events
-- Reliably observable unusual market positioning, flows, or anomalies
-- Expert commentary that identifies a development requiring independent verification
+News, newsletters, social posts and Motley Fool articles may generate ideas but cannot independently confirm them. Do not bypass paywalls or infer undisclosed premium recommendations. Expert commentary may enhance an already supported thesis but is never originating proof.
 
-Every trigger record must include the date and time, original source, source URL, affected sector, factual claim, and why the event may be economically important.
+Compare fresh candidates with existing ideas on catalyst timing, economic materiality, valuation, current price, downside and invalidation, liquidity, expected reward, and availability of a clean investable expression. Investigate the strongest few deeply; do not pad the shortlist or research every promotional article.
 
-### Stage 2 Reliable Source Confirmation
+## Evidence and Thesis Pipeline
 
-Confirm material facts with primary sources where possible and high-quality independent reporting when primary evidence is incomplete or delayed. Corroboration must be genuinely independent. Several articles repeating the same anonymous report count as one evidence chain.
+### Trigger and Confirmation
 
-Primary sources include government agencies, regulators, statutory text, official award records, company filings, exchange data, and recognized industry statistics. High-quality reporting may confirm timing, context, or consequences, but must not be presented as a primary record when it is not one.
+Record each material trigger with its timestamp, original source and URL, affected market, factual claim, and possible economic significance. Confirm material facts with primary records where possible: government data, statutes, regulators, official award records, company filings and releases, exchange data, and recognized industry statistics. Several articles repeating one report count as one evidence chain.
 
-Unapproved or newly discovered sources may identify a trigger but receive lower weight until their reliability is demonstrated.
+### Economic Variable and Mechanism
 
-### Stage 3 Economic Variable and Mechanism
+For each shortlisted candidate record:
 
-State the predicted variable before naming an investment. Examples include crude supply, refining margins, freight rates, copper demand, government procurement revenue, interest rates, credit availability, volatility, or market breadth.
+- Expected variable and direction
+- Causal mechanism and time horizon
+- Observable confirming and contradicting measurements
+- Implementation, policy, substitution and already-priced modifiers
+- Strongest bear case or invalidation
+- Market confirmation and liquidity
 
-The thesis record must answer:
+### Legacy Thesis Classification
 
-- What variable should change?
-- In which direction?
-- Through what causal mechanism?
-- Over what time horizon?
-- Which observable measurements would confirm or contradict the prediction?
+The ledger retains the historical classifications Hypothesis, Developing, Strong, Actionable, Invalidated and Closed. These describe evidentiary maturity; they no longer gate paper decisions. A supported Developing thesis may justify a small exploratory paper position, while an Actionable thesis may still be rejected at the current price.
 
-### Stage 4 Modifiers
+Legacy Entry Window labels WAIT, ACCEPTABLE and PREFERRED remain for continuity and analysis. WAIT must include a priced or objectively testable pending order with an expiry, or be converted to a rejection. It must not be renewed automatically.
 
-Modifiers strengthen, weaken, delay, accelerate, or redirect the expected economic effect. Required checks include timing, implementation risk, policy reversals, countervailing supply or demand, substitution effects, second-order effects, market expectations, and whether the development is already priced in.
+## Paper Decision Framework
 
-### Stage 5 Expert Enhancers
+Every shortlisted candidate receives one of these decisions:
 
-Experts may increase or decrease confidence only after a preliminary evidence-based thesis exists. Mr Global is an approved oil and gas enhancer. Other experts should be used only when their domain expertise is directly relevant and their record can be evaluated.
+### PAPER ENTRY
 
-Expert agreement increases confidence modestly. Expert disagreement requires reassessment. An expert's statement never replaces independent confirmation.
+Record the instrument, timestamped executable price, simulated size, costs or spread assumption, rationale, horizon, invalidation or exit, and review date. A simulated fill requires contemporaneous bid/ask or other evidence that the price was executable and the instrument was liquid.
 
-### Stage 6 Contradictory Evidence
+### PENDING PAPER ORDER
 
-Every thesis must contain the strongest credible evidence against it. The record must identify whether each contradiction challenges the underlying facts, causal mechanism, timing, predicted direction, investable expression, or entry price.
+Record an exact price or objectively testable condition, proposed size, order type, expiry and review date. At expiry, explicitly execute if qualified, renew only with new evidence and a new expiry, or reject. A pending order is not a position and must never be counted in portfolio value or returns.
 
-### Stage 7 Market Confirmation
+### REJECT
 
-Market behavior is used as confirmation or contradiction, not as the original economic thesis. Relevant confirmation may include movement in the underlying commodity, related equities, sector breadth, spreads, volumes, transport data, volatility, or other market-specific measures.
+Record the reason, current timestamped comparison price, invalidation of the idea or missing edge, and a later performance checkpoint when practical. Rejection is a research decision, not a claim that the security must decline.
 
-A headline price spike without confirmation from related markets may indicate repricing noise or a poor entry rather than a mature thesis.
+If the ledger lacks available capital, sizing limits or another required portfolio rule, record a proposed paper trade and name that operational blocker. Do not invent a starting balance, reset capital, infer cash from existing positions, or describe the blocker as negative investment evidence.
 
-### Stage 8 Thesis Classification
+## Investable Expressions and Structure Risk
 
-- **Hypothesis**: A plausible trigger exists, but confirmation is insufficient.
-- **Developing**: The mechanism is defined and some independent confirmation exists.
-- **Strong**: Multiple independent elements converge and contradictions do not invalidate the mechanism.
-- **Actionable**: The economic thesis and investable mapping are sufficiently strong to begin Entry Window analysis.
-- **Invalidated**: Required facts, mechanism, or confirmation failed.
-- **Closed**: The evaluation horizon ended or the thesis was exited and scored.
+Prefer the cleanest liquid exposure to the predicted variable. Record whether the mapping is direct or indirect, what breaks the mapping, what appears priced in, and structure risks including futures roll, contango, leverage, options decay, tracking error, issuer risk, duration, credit quality and company-specific risk. Do not force an expression when no clean instrument exists.
 
-The established report-language equivalents may be used in the humorous summary: “Don't quote me” for uncertain, “pull your card” for bad evidence, “check yourself” for reassessment, “tell Ice Cube to leave the car running” for nearly actionable, “buy that bitch” only for a confirmed action under separately authorized rules, and “throw it in the gutter” for an invalidated or exited idea. Factual sections must always use the formal classifications.
+## Government Awards
 
-## Entry Window
+A government award is a trigger, not proof that a stock will rise. Distinguish a new award from a routine modification. For material findings record recipient and parent, agency, award identifier, action type, current and potential value, obligated amount, NAICS or PSC category when available, period of performance, competition status, confirmation sources, public announcement status, materiality versus company or segment revenue or backlog, and whether the market likely expected it. Confirm through the issuing agency, USAspending, filings or company disclosure whenever available.
 
-An actionable thesis enters one of three states:
+## Ledger, Outcomes and Source Registry
 
-### WAIT
+Each thesis receives a stable identifier and a frozen initial prediction. Add later evidence as dated observations. The Evidence Log stores supporting, contradictory, neutral, enhancer and market-confirmation records with real working URLs and timestamps. The Scan Runs sheet records every run, including silent runs, actual discovery coverage and data gaps.
 
-Use WAIT when the thesis may be valid but the entry is unattractive or insufficiently confirmed. Common reasons include chasing a headline move, price extended far above the pre-trigger structure, weak market breadth, poor reward relative to invalidation, missing physical or fundamental confirmation, or unusually high event risk.
+When a horizon matures, evaluate separately whether the economic variable, direction, timing, investment expression and entry discipline were correct. Leave unknown results blank. Update a source's track record only when a resolved outcome provides evidence about that source. Track idea-source performance at the individual author and recommendation-type level when the sample is sufficient; do not credit or condemn a whole publication from isolated outcomes.
 
-### ACCEPTABLE
-
-Use ACCEPTABLE when the thesis remains intact, the price is not excessively extended, reward versus the thesis-invalidation level is reasonable, and enough confirmation exists to justify a staged paper entry. It is valid but not unusually advantageous.
-
-### PREFERRED
-
-Use PREFERRED when the thesis remains strong and price offers a favorable entry near support, a retracement, consolidation, or pre-breakout structure without material deterioration in the evidence. Expected reward must compare favorably with the distance to invalidation.
-
-Every Entry Window decision must record the current price, relevant pre-breakout or support area, invalidation level or condition, recent headline move, expected reward, downside to invalidation, and the reason for the classification. When exact levels cannot be supported, use conditions rather than invented prices.
-
-## Investable Expressions
-
-Candidate investments are conditional expressions of the predicted economic variable, not recommendations. Prefer the cleanest direct exposure first. Then consider sector funds, producers, refiners, miners, shippers, or other equities when the mapping is economically sound.
-
-For each candidate, record:
-
-- Why it maps to the variable
-- Whether it provides direct or indirect exposure
-- What would invalidate the mapping
-- Whether the expected move appears partly priced in
-- Structure risks such as futures roll and contango, leverage, options decay, tracking error, issuer risk, and company-specific risk
-
-Do not force an investment candidate when no clean expression exists.
-
-## USAspending Contract Trigger Rules
-
-USAspending.gov is a trigger source, not proof that a recipient's stock will rise. A contract event deserves investigation when one or more of the following are present:
-
-- A large new award rather than a routine administrative modification
-- A material increase in current obligations or potential award value
-- An award material relative to the recipient company's annual revenue, segment revenue, or backlog
-- A new program, capability, agency relationship, or procurement category
-- Repeated awards that indicate a developing spending trend
-- A sole-source award, accelerated procurement, or unusual period of performance
-- An award that may change capacity, demand, margins, backlog, or competitive position
-
-Record recipient and parent company, awarding agency, award identifier, action type, current and potential value, obligated amount, NAICS or PSC category, period of performance, competitive status, announcement status, and possible publicly traded mapping. Confirm the award through agency releases, filings, company disclosures, or reliable reporting. Check whether the economic effect is meaningful and already expected by the market.
-
-## Source Registry
-
-Sources are classified as Trigger, Confirmation, Enhancer, Market Data, or Background. Each source receives provisional ratings for reliability, timeliness, and directness. Ratings change only from recorded outcomes.
-
-The registry tracks correct calls, incorrect calls, unverifiable calls, lead time, repeated-source dependence, and domain limitations. A high-profile source does not receive permanent trust without evidence. A small specialist source can gain weight if it repeatedly provides early, independently confirmed information.
-
-## Thesis Ledger and Evidence Log
-
-Each thesis receives a stable identifier and a frozen initial prediction. Later evidence is added as dated observations rather than overwriting the original record. The ledger contains thesis stage, confidence, trading edge, Entry Window, candidates, invalidation, evaluation horizon, and outcome fields.
-
-The evidence log stores each supporting, contradictory, neutral, enhancer, and market-confirmation observation with its source and URL. Links must be real, verified, functional, and suitable for email delivery. Placeholder citation links are prohibited.
-
-## Scoring and Proof
-
-When the evaluation horizon ends, score the thesis on five separate questions:
-
-1. Was the predicted economic variable correct?
-2. Was the predicted direction correct?
-3. Was the time horizon reasonably accurate?
-4. Did the selected investment expression behave as predicted?
-5. Did Entry Window discipline improve or protect the result?
-
-The workbook calculates a score only from questions with recorded Yes or No answers. Blank questions remain unevaluated and must not count as failures or successes.
-
-Review system performance by hit rate, average score, lead time, sector, trigger class, source, confidence level, and Entry Window classification. Small samples must be labeled as such. A profitable paper trade does not prove the thesis was sound, and a losing paper trade does not automatically prove the economic prediction was wrong.
+Track actual paper positions separately from proposals and pending orders. Preserve all existing position history and capital rules. Mark portfolio value and gain/loss only from verified prices. Compare performance with a relevant benchmark and track rejected candidates' subsequent returns when reliable checkpoints are available.
 
 ## Repeated Run Procedure
 
-Each scheduled broad scan should:
+1. Allocate at least two thirds of research effort to broad discovery outside the existing watchlist.
+2. Screen several independent channels across accessible sectors and asset classes.
+3. Record actual coverage and limitations without claiming exhaustive or proprietary access.
+4. Compare fresh and existing ideas on timing, materiality, valuation, price, downside, liquidity and reward.
+5. Deeply validate the strongest few using primary records and credible independent sources.
+6. Define the economic variable, direction, mechanism, horizon, contradictions and market confirmation.
+7. Assign or update thesis maturity, confidence and trading edge without changing frozen predictions.
+8. Make a paper entry, expiring pending order, or rejection; do not manufacture a trade.
+9. Update paper positions, rejected-candidate checkpoints, benchmarks and matured outcomes where evidence permits.
+10. Add a dated Scan Runs row even when no notification qualifies.
+11. Update the authoritative dashboard from the just-saved methodology and ledger.
+12. Send an email only for a new paper action or material portfolio change. Otherwise remain silent.
 
-1. Search broadly across sectors and asset classes for new triggers.
-2. Compare findings with existing open theses to avoid duplicates.
-3. Confirm facts through independent sources.
-4. Define the underlying economic variable, causal mechanism, direction, and horizon.
-5. Record modifiers, expert enhancers, and the strongest contradictions.
-6. Check relevant market confirmation.
-7. Assign or update the formal thesis stage.
-8. For actionable theses, assign WAIT, ACCEPTABLE, or PREFERRED.
-9. Identify conditional investable expressions and risks.
-10. Add or update the thesis ledger and evidence log without rewriting the original prediction.
-11. Evaluate theses whose horizons have matured.
-12. Send an email only when a new qualifying signal, meaningful thesis change, Entry Window change, invalidation, or completed evaluation merits attention.
+## Email Format
 
-If no qualifying change exists, record the completed scan and remain silent.
+One consolidated plain-text email may be sent when notification qualifies. It must be 200 words or fewer, usually less, and lead with the decision and instrument. Include at most three strongest actionable findings, each with why now in one or two sentences plus paper entry or pending-order size and exit conditions when applicable. Include verified paper portfolio value and gain/loss only when available. Use at most one brief Eazy-E-flavored line and at most three supporting links. Omit unchanged theses, repeated WAIT language and research-process narration. Detailed evidence belongs in the ledger and dashboard.
 
-## Alert Format
-
-Reports begin with a short, naturally written Eazy E inspired summary, followed by a factual evidence section with working source links. Slang must remain sparse and must never obscure uncertainty.
-
-The factual section includes trigger, timestamp, thesis stage, economic variable and direction, mechanism, confirmations, contradictions, modifiers, expert enhancers, market confirmation, time horizon, confidence, trading edge, Entry Window, investable expressions, invalidation, and what to monitor next.
+If there is no new action and no material portfolio change, log the run and remain silent. If an operational failure prevents execution or publication, report it briefly and specifically.
 
 ## Control and Safety
 
-This methodology supports research and paper testing. It does not authorize automatic trading or capital deployment. Any future execution stage requires separate design, explicit authorization, brokerage safeguards, position-sizing rules, loss limits, audit logs, and failure controls.
+This methodology authorizes research, ledger and dashboard updates, and simulated paper decisions only. It does not authorize real orders, brokerage access or capital deployment. Any real-money execution requires separate explicit authorization and safeguards including available-capital rules, position limits, loss limits, audit logging and failure controls.
 
 ## Version History
 
+- Version 2.0, October 15, 2026: Implemented the October 14 revised directive: broad independent discovery, minimum outside-watchlist research allocation, explicit paper-entry/pending-order/rejection decisions, fill integrity, rejected-candidate and benchmark tracking, concise conditional email reporting, and preservation of all historical records.
 - Version 1.0, September 11, 2026: Consolidated the project methodology, formalized Entry Window rules, expanded USAspending materiality tests, and established outcome scoring and recurring-run requirements.
