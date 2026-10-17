@@ -18,6 +18,7 @@ An interesting event is not automatically a trade. The process may make a small 
 8. Require contemporaneous prices, liquidity and applicable costs for simulated fills. No hindsight fills.
 9. Compare accepted and rejected ideas with relevant benchmarks so both bad entries and excessive caution remain measurable.
 10. Do not imply exhaustive coverage, proprietary feeds or reliable institutional-flow data when those are unavailable.
+11. An alert labeled ACTIONABLE NOW must be executable at a verified contemporaneous market price when sent. Never recycle a stale entry price or convert a missed setup into a chase.
 
 ## Discovery Allocation and Coverage
 
@@ -71,6 +72,8 @@ Record the instrument, timestamped executable price, simulated size, costs or sp
 
 Record an exact price or objectively testable condition, proposed size, order type, expiry and review date. At expiry, explicitly execute if qualified, renew only with new evidence and a new expiry, or reject. A pending order is not a position and must never be counted in portfolio value or returns.
 
+Pending paper orders may remain useful for research, but they must not be presented as user-executable trade alerts when the user intends to use market orders. In that case, revisit the candidate with a fresh quote during an open market and either label it ACTIONABLE NOW at that price or reject it. A closed-market observation is a next-session watch, not an actionable-now alert.
+
 ### REJECT
 
 Record the reason, current timestamped comparison price, invalidation of the idea or missing edge, and a later performance checkpoint when practical. Rejection is a research decision, not a claim that the security must decline.
@@ -108,9 +111,13 @@ Track actual paper positions separately from proposals and pending orders. Prese
 11. Update the authoritative dashboard from the just-saved methodology and ledger.
 12. Send an email only for a new paper action or material portfolio change. Otherwise remain silent.
 
+For any candidate intended for manual real-money consideration, verify the current regular-session price at the time of the alert, state a do-not-chase ceiling or invalidating price condition, and ensure the thesis still offers acceptable downside-to-reward at that price. If the market is closed, the quote is stale, or the move has already consumed the entry edge, do not call it actionable. Recheck during the next open session. Research and paper tracking never authorize order placement.
+
 ## Email Format
 
 One consolidated plain-text email may be sent when notification qualifies. It must be 200 words or fewer, usually less, and lead with the decision and instrument. Include at most three strongest actionable findings, each with why now in one or two sentences plus paper entry or pending-order size and exit conditions when applicable. Include verified paper portfolio value and gain/loss only when available. Use at most one brief Eazy-E-flavored line and at most three supporting links. Omit unchanged theses, repeated WAIT language and research-process narration. Detailed evidence belongs in the ledger and dashboard.
+
+When a user may act manually with a market order, use the label ACTIONABLE NOW only with a timestamped contemporaneous regular-session price, a suggested size, a do-not-chase ceiling or objective price condition, a time horizon, and invalidation or exit terms. Do not email a stale limit setup as though it were executable. If the opportunity is no longer attractive at the verified price, say SKIP or REJECT and do not encourage chasing.
 
 If there is no new action and no material portfolio change, log the run and remain silent. If an operational failure prevents execution or publication, report it briefly and specifically.
 
@@ -120,5 +127,6 @@ This methodology authorizes research, ledger and dashboard updates, and simulate
 
 ## Version History
 
+- Version 2.1, October 17, 2026: Added executable-alert discipline after the user chose manual market orders: ACTIONABLE NOW requires a fresh regular-session price and acceptable risk/reward, stale or closed-market setups are not actionable, and missed entries must not become chase recommendations.
 - Version 2.0, October 15, 2026: Implemented the October 14 revised directive: broad independent discovery, minimum outside-watchlist research allocation, explicit paper-entry/pending-order/rejection decisions, fill integrity, rejected-candidate and benchmark tracking, concise conditional email reporting, and preservation of all historical records.
 - Version 1.0, September 11, 2026: Consolidated the project methodology, formalized Entry Window rules, expanded USAspending materiality tests, and established outcome scoring and recurring-run requirements.
