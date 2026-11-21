@@ -299,31 +299,31 @@ if (atecNow) { atecNow.querySelector('.entry').textContent='POSITION OPEN'; atec
 
 const niqNow = cardsByIndex.get('35');
 if (niqNow) {
-  niqNow.querySelector('.entry').textContent='POSITION OPEN';
-  niqNow.querySelector('.entry').className='entry actionable';
+  niqNow.querySelector('.entry').textContent='EXITED 11/20';
+  niqNow.querySelector('.entry').className='entry wait';
   const d=niqNow.querySelectorAll('.detail-grid p');
-  d[2].textContent='$300 filled in the Nov 17 opening auction at an effective $18.579285 after 5 bp costs, for 16.1470 units. The active $18.75 limit crossed the verified $18.57 open; the position is marked at the $18.32 close.';
-  d[3].textContent='Exit below $16.85 or on material retention, organic-growth, adjusted-EPS, leverage, free-cash-flow or restructuring deterioration. Review profit near $22.50 or reassess Feb 16, 2027.';
+  d[2].textContent='$300 filled in the Nov 17 opening auction at an effective $18.579285 for 16.1470 units. The pre-specified exit executed at the verified Nov 20 open less 5 bp, an effective $16.521735.';
+  d[3].textContent='The position is closed. Realized value was $266.78 and realized P&L was −$33.22. The frozen prediction remains unchanged and unevaluated.';
 }
 const disNow = cardsByIndex.get('38');
 if (disNow) {
   disNow.querySelector('.entry').textContent='POSITION OPEN';
   disNow.querySelector('.entry').className='entry actionable';
   const d=disNow.querySelectorAll('.detail-grid p');
-  d[2].textContent='$300 filled in the Nov 17 opening auction at an effective $118.31913 after 5 bp costs, for 2.5355 units. The active $119 limit crossed the verified $118.26 open; the position is marked at the $116.94 close.';
+  d[2].textContent='$300 filled in the Nov 17 opening auction at an effective $118.31913 after 5 bp costs, for 2.5355 units. The position is marked at the verified $117.98 close for $299.14.';
   d[3].textContent='Exit below $107.50 or on material adjusted-EPS, free-cash-flow, streaming, guest-demand, sports-economics or capital-return deterioration. Review profit near $140 or reassess Feb 17, 2027.';
 }
-const markUpdates = {
-  '33': ['$6.68 close', '$286.14'],
-  '37': ['$150.44 close', '$285.34'],
-  '38': ['$117.98 close', '$299.14'],
-  '40': ['$270.44 close', '$294.88']
+const positionUpdates = {
+  '33': '$300 filled in the Nov 16 opening auction at an effective $7.0035 after 5 bp costs, for 42.8357 units. The position is marked at the verified $6.68 close for $286.14.',
+  '37': '$300 filled in the Nov 16 opening auction at an effective $158.169045 after 5 bp costs, for 1.8967 units. The position is marked at the verified $150.44 close for $285.34.',
+  '38': '$300 filled in the Nov 17 opening auction at an effective $118.31913 after 5 bp costs, for 2.5355 units. The position is marked at the verified $117.98 close for $299.14.',
+  '40': 'The $275 limit traded through Nov 20. A $300 paper position filled at an effective $275.1375 after 5 bp costs for 1.0904 units and is marked at the verified $270.44 close for $294.88.'
 };
-Object.entries(markUpdates).forEach(([idx, [closeText, valueText]]) => {
+Object.entries(positionUpdates).forEach(([idx, positionText]) => {
   const card = cardsByIndex.get(idx);
   if (!card) return;
   const d = card.querySelectorAll('.detail-grid p');
-  if (d[2]) d[2].textContent = d[2].textContent.replace(/marked at (?:the )?\$[0-9.]+ close(?: for \$[0-9.]+)?/i, `marked at the ${closeText} for ${valueText}`);
+  if (d[2]) d[2].textContent = positionText;
 });
 const wwwNow = cardsByIndex.get('34');
 if (wwwNow) {
